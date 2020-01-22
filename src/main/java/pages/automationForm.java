@@ -44,9 +44,11 @@ public class automationForm extends testBase{
 	
 	 Select sel_region = new Select(crmDriver.findElement(By.xpath(".//*[@id='continents']")));
 	 
-	 public void enterFirstName(String fname){
+	 public void enterName(String fname,String lname){
 		 fName.sendKeys(fname);
+		 lName.sendKeys(lname);
 	 }
+	 
 	 
 	 public void select_region(){
 		 sel_region.selectByVisibleText("Asia");
