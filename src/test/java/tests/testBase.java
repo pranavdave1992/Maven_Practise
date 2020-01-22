@@ -7,15 +7,13 @@ import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.testng.annotations.AfterSuite;
-import org.testng.annotations.BeforeClass;
-import org.testng.annotations.BeforeSuite;
+import org.testng.annotations.*;
 
 public class testBase {
-	public static WebDriver crmDriver;
+	public WebDriver crmDriver;
 	private static Properties prop;
 	
-	@BeforeSuite
+	@BeforeMethod
 	public void tearUP(){
 		System.setProperty("webdriver.chrome.driver",".\\src\\main\\java\\utils\\chromedriver.exe");
 		crmDriver = new ChromeDriver();
@@ -41,13 +39,14 @@ public class testBase {
 		crmDriver.get(prop.getProperty("url"));
 	}
 	
-	@BeforeClass
+	@BeforeTest
 	public void openingWebPage(){
 		crmDriver.get(prop.getProperty("url"));
 	}
 	
-	@AfterSuite
+	@AfterMethod
 	public void tearDown(){
 		crmDriver.close();
 	}
+
 }
