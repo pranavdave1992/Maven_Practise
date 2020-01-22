@@ -15,7 +15,7 @@ public class automationFormTest{
 	public void test1() throws Exception{
 		PageFactory.initElements(formTest.crmDriver, pageElements);
 		
-		pageElements.enterFirstName("Pranav");
+		pageElements.enterName("Pranav","Dave");
 		testUtils.takeSnapShot();
 		testUtils.timestamp();
 	}
