@@ -1,5 +1,6 @@
 package utils;
 
+
 import java.io.File;
 import java.text.SimpleDateFormat;
 import java.util.Date;
@@ -13,19 +14,22 @@ import tests.testBase;
 
 public class testUtils extends testBase{
 	
-	public static WebDriver driver;
+	private WebDriver driver;
 	
-	public testUtils() {
-        this.driver = super.crmDriver;
-    }
+	public testUtils(WebDriver crmDriver) {
+	       this.driver = crmDriver;
+	    }
 	
-	public static void takeSnapShot() throws Exception{
-		//Convert web driver object to TakeScreenshot
-		TakesScreenshot scrShot =((TakesScreenshot) driver);
+	public void takeSnapShot() throws Exception{
+		
+		System.out.println(this.driver);
+		
 		//Call getScreenshotAs method to create image file
-		File SrcFile=scrShot.getScreenshotAs(OutputType.FILE);
+		File SrcFile = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
+		
 		//Move image file to new destination
 		File DestFile=new File("failedTestCaseScreens/"+timestamp()+".png");
+		
 		//Copy file at destination
 		FileUtils.copyFile(SrcFile, DestFile);
 	}

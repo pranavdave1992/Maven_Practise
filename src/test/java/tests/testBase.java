@@ -10,10 +10,10 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.*;
 
 public class testBase {
-	public WebDriver crmDriver;
+	public static WebDriver crmDriver;
 	private static Properties prop;
 	
-	@BeforeMethod
+	@BeforeSuite
 	public void tearUP(){
 		System.setProperty("webdriver.chrome.driver",".\\src\\main\\java\\utils\\chromedriver.exe");
 		crmDriver = new ChromeDriver();
@@ -39,14 +39,19 @@ public class testBase {
 		crmDriver.get(prop.getProperty("url"));
 	}
 	
-	@BeforeTest
-	public void openingWebPage(){
-		crmDriver.get(prop.getProperty("url"));
-	}
-	
-	@AfterMethod
+	@AfterSuite
 	public void tearDown(){
 		crmDriver.close();
 	}
+	
+	 public WebDriver getDriver (){
+         return crmDriver;
+     }
+	 
+	 @BeforeTest
+		public void openingWebPage(){
+		 	String url = prop.getProperty("url");
+			crmDriver.get(url);
+		}
 
 }

@@ -4,6 +4,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.Select;
 
 import tests.testBase;
@@ -12,11 +13,11 @@ public class automationForm extends testBase{
 	
 	private WebDriver driver;
 	
-	 public automationForm() {
-	        this.driver = super.crmDriver;
+	 public automationForm(WebDriver crmDriver) {
+	       this.driver = crmDriver;
 	    }
 	
-	 @FindBy(xpath=".//*[@name='firstname']") 
+	 @FindBy(name="firstname") 
 	 public WebElement fName;
 	 
 	 @FindBy(partialLinkText="Partial Link")
@@ -52,8 +53,8 @@ public class automationForm extends testBase{
 	 Select sel_region = new Select(crmDriver.findElement(By.xpath(".//*[@id='continents']")));
 	 
 	 public void enterName(String fname, String lname){
-		 fName.sendKeys(fname);
-		 lName.sendKeys(lname);
+		fName.sendKeys(fname);
+		lName.sendKeys(lname);
 	 }
 	 
 	 public void select_region(){
