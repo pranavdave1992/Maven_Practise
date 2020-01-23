@@ -9,9 +9,12 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.*;
 
+import utils.testUtils;
+
 public class testBase {
 	public static WebDriver crmDriver;
 	private static Properties prop;
+	public testUtils formTest;
 	
 	@BeforeSuite
 	public void tearUP(){
@@ -48,10 +51,11 @@ public class testBase {
          return crmDriver;
      }
 	 
-	 @BeforeTest
+	 @BeforeClass
 		public void openingWebPage(){
 		 	String url = prop.getProperty("url");
 			crmDriver.get(url);
+			formTest = new testUtils(getDriver());
 		}
 
 }
