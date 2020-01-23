@@ -1,29 +1,136 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+<testng-results skipped="1" failed="0" ignored="0" total="2" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="5036" started-at="2020-01-23T15:03:15 EST" finished-at="2020-01-23T15:03:20 EST">
+  <suite name="Suite" duration-ms="5743" started-at="2020-01-23T17:05:19 EST" finished-at="2020-01-23T17:05:25 EST">
     <groups>
     </groups>
-    <test name="Test" duration-ms="5036" started-at="2020-01-23T15:03:15 EST" finished-at="2020-01-23T15:03:20 EST">
+    <test name="Test" duration-ms="5743" started-at="2020-01-23T17:05:19 EST" finished-at="2020-01-23T17:05:25 EST">
       <class name="tests.automationFormTest">
-        <test-method status="PASS" signature="tearUP()[pri:0, instance:tests.automationFormTest@3d99d22e]" name="tearUP" is-config="true" duration-ms="3864" started-at="2020-01-23T15:03:11 EST" finished-at="2020-01-23T15:03:15 EST">
+        <test-method status="PASS" signature="tearUP()[pri:0, instance:tests.automationFormTest@5e853265]" name="tearUP" is-config="true" duration-ms="3973" started-at="2020-01-23T17:05:15 EST" finished-at="2020-01-23T17:05:19 EST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearUP -->
-        <test-method status="PASS" signature="before()[pri:0, instance:tests.automationFormTest@3d99d22e]" name="before" is-config="true" duration-ms="1589" started-at="2020-01-23T15:03:15 EST" finished-at="2020-01-23T15:03:17 EST">
+        <test-method status="PASS" signature="startReport()[pri:0, instance:tests.automationFormTest@5e853265]" name="startReport" is-config="true" duration-ms="243" started-at="2020-01-23T17:05:19 EST" finished-at="2020-01-23T17:05:19 EST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startReport -->
+        <test-method status="PASS" signature="before()[pri:0, instance:tests.automationFormTest@5e853265]" name="before" is-config="true" duration-ms="1239" started-at="2020-01-23T17:05:19 EST" depends-on-methods="tests.testBase.startReport" finished-at="2020-01-23T17:05:21 EST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- before -->
-        <test-method status="PASS" signature="openingWebPage()[pri:0, instance:tests.automationFormTest@3d99d22e]" name="openingWebPage" is-config="true" duration-ms="403" started-at="2020-01-23T15:03:17 EST" finished-at="2020-01-23T15:03:17 EST">
+        <test-method status="PASS" signature="openingWebPage()[pri:0, instance:tests.automationFormTest@5e853265]" name="openingWebPage" is-config="true" duration-ms="757" started-at="2020-01-23T17:05:21 EST" finished-at="2020-01-23T17:05:22 EST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openingWebPage -->
-        <test-method status="PASS" signature="test1()[pri:0, instance:tests.automationFormTest@3d99d22e]" name="test1" duration-ms="3003" started-at="2020-01-23T15:03:17 EST" finished-at="2020-01-23T15:03:20 EST">
+        <test-method status="PASS" signature="test1()[pri:0, instance:tests.automationFormTest@5e853265]" name="test1" duration-ms="3389" started-at="2020-01-23T17:05:22 EST" finished-at="2020-01-23T17:05:25 EST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test1 -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:tests.automationFormTest@3d99d22e]" name="tearDown" is-config="true" duration-ms="1603" started-at="2020-01-23T15:03:20 EST" finished-at="2020-01-23T15:03:22 EST">
+        <test-method status="FAIL" signature="getResult(org.testng.ITestResult)[pri:0, instance:tests.automationFormTest@5e853265]" name="getResult" is-config="true" duration-ms="9" started-at="2020-01-23T17:05:25 EST" finished-at="2020-01-23T17:05:25 EST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=test1 status=SUCCESS method=automationFormTest.test1()[pri:0, instance:tests.automationFormTest@5e853265] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.NullPointerException">
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException
+at tests.testBase.getResult(testBase.java:103)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:340)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:294)
+at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:683)
+at org.testng.internal.TestInvoker.runAfterGroupsConfigurations(TestInvoker.java:658)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:642)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:172)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.util.ArrayList.forEach(Unknown Source)
+at org.testng.TestRunner.privateRun(TestRunner.java:770)
+at org.testng.TestRunner.run(TestRunner.java:591)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:396)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:355)
+at org.testng.SuiteRunner.run(SuiteRunner.java:304)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
+at org.testng.TestNG.runSuites(TestNG.java:1032)
+at org.testng.TestNG.run(TestNG.java:1000)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+        <test-method status="SKIP" signature="verifyTitle()[pri:0, instance:tests.automationFormTest@5e853265]" name="verifyTitle" duration-ms="0" started-at="2020-01-23T17:05:25 EST" finished-at="2020-01-23T17:05:25 EST">
+          <exception class="java.lang.NullPointerException">
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException
+at tests.testBase.getResult(testBase.java:103)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:340)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:294)
+at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:683)
+at org.testng.internal.TestInvoker.runAfterGroupsConfigurations(TestInvoker.java:658)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:642)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:172)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.util.ArrayList.forEach(Unknown Source)
+at org.testng.TestRunner.privateRun(TestRunner.java:770)
+at org.testng.TestRunner.run(TestRunner.java:591)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:396)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:355)
+at org.testng.SuiteRunner.run(SuiteRunner.java:304)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
+at org.testng.TestNG.runSuites(TestNG.java:1032)
+at org.testng.TestNG.run(TestNG.java:1000)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyTitle -->
+        <test-method status="SKIP" signature="getResult(org.testng.ITestResult)[pri:0, instance:tests.automationFormTest@5e853265]" name="getResult" is-config="true" duration-ms="-1579817125461" started-at="2020-01-23T17:05:25 EST" finished-at="1969-12-31T19:00:00 EST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+        <test-method status="PASS" signature="endReport()[pri:0, instance:tests.automationFormTest@5e853265]" name="endReport" is-config="true" duration-ms="1" started-at="2020-01-23T17:05:25 EST" finished-at="2020-01-23T17:05:25 EST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- endReport -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:tests.automationFormTest@5e853265]" name="tearDown" is-config="true" duration-ms="521" started-at="2020-01-23T17:05:25 EST" finished-at="2020-01-23T17:05:26 EST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->

@@ -18,7 +18,7 @@ public class automationFormTest extends testBase{
 	@Test()
 	public void test1() throws Exception{
 		pageElements.enterName("Pranav","Dave");
-		formTest.takeSnapShot();
+		util.takeSnapShot();
 	}
 	
 }

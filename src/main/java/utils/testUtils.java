@@ -23,14 +23,8 @@ public class testUtils extends testBase{
 	public void takeSnapShot() throws Exception{
 		
 		System.out.println(this.driver);
-		
-		//Call getScreenshotAs method to create image file
 		File SrcFile = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
-		
-		//Move image file to new destination
 		File DestFile=new File("failedTestCaseScreens/"+timestamp()+".png");
-		
-		//Copy file at destination
 		FileUtils.copyFile(SrcFile, DestFile);
 	}
 	

@@ -14,7 +14,7 @@ import utils.testUtils;
 public class testBase {
 	public static WebDriver crmDriver;
 	private static Properties prop;
-	public testUtils formTest;
+	public testUtils util;
 	
 	@BeforeSuite
 	public void tearUP(){
@@ -47,15 +47,15 @@ public class testBase {
 		crmDriver.close();
 	}
 	
-	 public WebDriver getDriver (){
+	public WebDriver getDriver (){
          return crmDriver;
-     }
+    }
 	 
-	 @BeforeClass
+	@BeforeClass
 		public void openingWebPage(){
 		 	String url = prop.getProperty("url");
 			crmDriver.get(url);
-			formTest = new testUtils(getDriver());
-		}
+			util = new testUtils(getDriver());
+	}
 
 }
