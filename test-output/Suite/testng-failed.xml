@@ -5,14 +5,11 @@
     <classes>
       <class name="tests.automationFormTest">
         <methods>
+          <include name="test1"/>
           <include name="openingWebPage"/>
-          <include name="verifyTitle"/>
-          <include name="getResult"/>
           <include name="tearUP"/>
-          <include name="endReport"/>
           <include name="before"/>
           <include name="tearDown"/>
-          <include name="startReport"/>
         </methods>
       </class> <!-- tests.automationFormTest -->
     </classes>
