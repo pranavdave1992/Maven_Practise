@@ -2,28 +2,28 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="5036" started-at="2020-01-23T15:03:15 EST" finished-at="2020-01-23T15:03:20 EST">
+  <suite name="Suite" duration-ms="6724" started-at="2020-01-24T15:13:14 EST" finished-at="2020-01-24T15:13:21 EST">
     <groups>
     </groups>
-    <test name="Test" duration-ms="5036" started-at="2020-01-23T15:03:15 EST" finished-at="2020-01-23T15:03:20 EST">
+    <test name="Test" duration-ms="6724" started-at="2020-01-24T15:13:14 EST" finished-at="2020-01-24T15:13:21 EST">
       <class name="tests.automationFormTest">
-        <test-method status="PASS" signature="tearUP()[pri:0, instance:tests.automationFormTest@3d99d22e]" name="tearUP" is-config="true" duration-ms="3864" started-at="2020-01-23T15:03:11 EST" finished-at="2020-01-23T15:03:15 EST">
+        <test-method status="PASS" signature="tearUP()[pri:0, instance:tests.automationFormTest@cd2dae5]" name="tearUP" is-config="true" duration-ms="13" started-at="2020-01-24T15:13:14 EST" finished-at="2020-01-24T15:13:14 EST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearUP -->
-        <test-method status="PASS" signature="before()[pri:0, instance:tests.automationFormTest@3d99d22e]" name="before" is-config="true" duration-ms="1589" started-at="2020-01-23T15:03:15 EST" finished-at="2020-01-23T15:03:17 EST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- before -->
-        <test-method status="PASS" signature="openingWebPage()[pri:0, instance:tests.automationFormTest@3d99d22e]" name="openingWebPage" is-config="true" duration-ms="403" started-at="2020-01-23T15:03:17 EST" finished-at="2020-01-23T15:03:17 EST">
+        <test-method status="PASS" signature="openingWebPage()[pri:0, instance:tests.automationFormTest@cd2dae5]" name="openingWebPage" is-config="true" duration-ms="3936" started-at="2020-01-24T15:13:14 EST" finished-at="2020-01-24T15:13:18 EST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openingWebPage -->
-        <test-method status="PASS" signature="test1()[pri:0, instance:tests.automationFormTest@3d99d22e]" name="test1" duration-ms="3003" started-at="2020-01-23T15:03:17 EST" finished-at="2020-01-23T15:03:20 EST">
+        <test-method status="PASS" signature="before()[pri:0, instance:tests.automationFormTest@cd2dae5]" name="before" is-config="true" duration-ms="34" started-at="2020-01-24T15:13:18 EST" depends-on-methods="tests.testBase.openingWebPage" finished-at="2020-01-24T15:13:18 EST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- before -->
+        <test-method status="PASS" signature="test1()[pri:0, instance:tests.automationFormTest@cd2dae5]" name="test1" duration-ms="2702" started-at="2020-01-24T15:13:18 EST" finished-at="2020-01-24T15:13:21 EST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test1 -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:tests.automationFormTest@3d99d22e]" name="tearDown" is-config="true" duration-ms="1603" started-at="2020-01-23T15:03:20 EST" finished-at="2020-01-23T15:03:22 EST">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:tests.automationFormTest@cd2dae5]" name="tearDown" is-config="true" duration-ms="2156" started-at="2020-01-24T15:13:21 EST" finished-at="2020-01-24T15:13:23 EST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
