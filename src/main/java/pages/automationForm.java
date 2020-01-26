@@ -10,8 +10,8 @@ public class automationForm{
 
 	private WebDriver formDriver;
 
-	public automationForm(WebDriver crmDriver2) {
-		this.formDriver = crmDriver2;
+	public automationForm(WebDriver Driver2) {
+		this.formDriver = Driver2;
 		PageFactory.initElements(formDriver, this);
 	}
 
