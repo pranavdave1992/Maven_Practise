@@ -52,6 +52,8 @@ public class automationForm{
 	public Select sel_region;
 
 	public void enterName(String fname, String lname){
+		fName.clear();
+		lName.clear();
 		fName.sendKeys(fname);
 		lName.sendKeys(lname);
 	}

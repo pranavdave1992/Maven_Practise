@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<<<<<<< Updated upstream
 <testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
@@ -24,6 +25,45 @@
           </reporter-output>
         </test-method> <!-- fillingTheForm -->
         <test-method status="PASS" signature="tearDown()[pri:0, instance:tests.automationFormTest@61443d8f]" name="tearDown" is-config="true" duration-ms="132" started-at="2020-01-26T15:17:38Z" finished-at="2020-01-26T15:17:38Z">
+=======
+<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="8278" started-at="2020-01-24T18:47:48 EST" finished-at="2020-01-24T18:47:56 EST">
+    <groups>
+    </groups>
+    <test name="Test" duration-ms="8278" started-at="2020-01-24T18:47:48 EST" finished-at="2020-01-24T18:47:56 EST">
+      <class name="tests.automationFormTest">
+        <test-method status="PASS" signature="tearUP()[pri:0, instance:tests.automationFormTest@7494e528]" name="tearUP" is-config="true" duration-ms="13" started-at="2020-01-24T18:47:48 EST" finished-at="2020-01-24T18:47:48 EST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearUP -->
+        <test-method status="PASS" signature="openingWebPage()[pri:0, instance:tests.automationFormTest@7494e528]" name="openingWebPage" is-config="true" duration-ms="4018" started-at="2020-01-24T18:47:48 EST" finished-at="2020-01-24T18:47:52 EST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openingWebPage -->
+        <test-method status="PASS" signature="before()[pri:0, instance:tests.automationFormTest@7494e528]" name="before" is-config="true" duration-ms="36" started-at="2020-01-24T18:47:52 EST" depends-on-methods="tests.testBase.openingWebPage" finished-at="2020-01-24T18:47:52 EST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- before -->
+        <test-method status="PASS" signature="startTest()[pri:0, instance:tests.automationFormTest@7494e528]" name="startTest" is-config="true" duration-ms="248" started-at="2020-01-24T18:47:52 EST" finished-at="2020-01-24T18:47:52 EST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startTest -->
+        <test-method status="PASS" signature="fillingTheForm()[pri:0, instance:tests.automationFormTest@7494e528]" name="fillingTheForm" duration-ms="2281" started-at="2020-01-24T18:47:52 EST" finished-at="2020-01-24T18:47:54 EST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- fillingTheForm -->
+        <test-method status="PASS" signature="fillingTheForm2()[pri:0, instance:tests.automationFormTest@7494e528]" name="fillingTheForm2" duration-ms="1269" started-at="2020-01-24T18:47:54 EST" finished-at="2020-01-24T18:47:55 EST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- fillingTheForm2 -->
+        <test-method status="PASS" signature="endTest()[pri:0, instance:tests.automationFormTest@7494e528]" name="endTest" is-config="true" duration-ms="382" started-at="2020-01-24T18:47:55 EST" finished-at="2020-01-24T18:47:56 EST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- endTest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:tests.automationFormTest@7494e528]" name="tearDown" is-config="true" duration-ms="560" started-at="2020-01-24T18:47:56 EST" finished-at="2020-01-24T18:47:56 EST">
+>>>>>>> Stashed changes
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->

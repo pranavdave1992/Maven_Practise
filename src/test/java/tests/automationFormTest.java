@@ -2,6 +2,8 @@ package tests;
 
 import org.testng.annotations.*;
 
+import com.relevantcodes.extentreports.LogStatus;
+
 import pages.automationForm;
 
 public class automationFormTest extends testBase{
@@ -17,6 +19,14 @@ public class automationFormTest extends testBase{
 	public void fillingTheForm() throws Exception{
 		pageElements.enterName("Pranav","Dave");
 		util.takeSnapShot();
+		test.log(LogStatus.PASS, "Entered Name");
+	}
+	
+	@Test()
+	public void fillingTheForm2() throws Exception{
+		pageElements.enterName("Pranav","Dave");
+		util.takeSnapShot();
+		test.log(LogStatus.FAIL, "Entered Name");
 	}
 
 }

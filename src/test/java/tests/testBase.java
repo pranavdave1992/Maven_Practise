@@ -12,12 +12,17 @@ import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.testng.annotations.*;
 
+import com.relevantcodes.extentreports.ExtentReports;
+import com.relevantcodes.extentreports.ExtentTest;
+
 import utils.testUtils;
 
 public class testBase {
 	public static WebDriver driver;
 	private static Properties prop;
 	public testUtils util;
+	static ExtentTest test;
+	static ExtentReports report;
 
 	@BeforeSuite
 	public void tearUP(){
@@ -76,6 +81,18 @@ public class testBase {
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		driver.get(url);
 		loadUtils();
+	}
+	
+	@BeforeClass
+	public static void startTest(){
+		report = new ExtentReports("\\test-output\\ExtentReportResults.html");
+		test = report.startTest("automationFormTest");
+	}
+
+	@AfterClass
+	public static void endTest(){
+		report.endTest(test);
+		report.flush();
 	}
 	
 	public void loadUtils() {
