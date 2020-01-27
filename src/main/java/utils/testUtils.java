@@ -19,7 +19,6 @@ public class testUtils{
 	}
 
 	public void takeSnapShot() throws Exception{
-		System.out.println(this.driver);
 		File SrcFile = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
 		File DestFile=new File("failedTestCaseScreens/"+timestamp()+".png");
 		FileUtils.copyFile(SrcFile, DestFile);

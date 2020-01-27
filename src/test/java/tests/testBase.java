@@ -79,18 +79,21 @@ public class testBase {
 		}
 		
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+		driver.manage().window().maximize();
 		driver.get(url);
 		loadUtils();
 	}
 	
 	@BeforeClass
 	public static void startTest(){
-		report = new ExtentReports("\\test-output\\ExtentReportResults.html");
+		System.out.println("Creating report");
+		report = new ExtentReports(".\\test-output\\ExtentRep.html");
 		test = report.startTest("automationFormTest");
 	}
 
 	@AfterClass
 	public static void endTest(){
+		System.out.println("Ending report");
 		report.endTest(test);
 		report.flush();
 	}

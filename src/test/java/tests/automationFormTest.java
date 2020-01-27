@@ -26,7 +26,7 @@ public class automationFormTest extends testBase{
 	public void fillingTheForm2() throws Exception{
 		pageElements.enterName("Pranav","Dave");
 		util.takeSnapShot();
-		test.log(LogStatus.FAIL, "Entered Name");
+		test.log(LogStatus.PASS, "Entered Name");
 	}
 
 }
