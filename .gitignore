@@ -27,4 +27,7 @@ hs_err_pid*
 *.png
 
 # Ignoring the test-output folder
-/test-output/*xml
+test-output/
+/test-output/
+test-output/*
+/test-output/*

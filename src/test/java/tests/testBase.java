@@ -13,10 +13,13 @@ import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.testng.annotations.*;
 import org.yaml.snakeyaml.Yaml;
+import org.yaml.snakeyaml.constructor.Constructor;
 
 import com.relevantcodes.extentreports.ExtentReports;
 import com.relevantcodes.extentreports.ExtentTest;
 
+import pages.automationForm;
+import testData.customer;
 import utils.testUtils;
 
 public class testBase {
@@ -45,23 +48,7 @@ public class testBase {
 		catch(Exception e){
 			System.out.println(e);
 		}
-		
-		// Loading the Yaml file
-		Yaml yaml = new Yaml();
-		String customerYaml = "customer.yaml";
-		InputStream inputStreamYaml = this.getClass().getClassLoader().getResourceAsStream(customerYaml);
-	    try{
-			if (inputStreamYaml != null) {
-				Object obj = yaml.load(inputStreamYaml);
-				System.out.println(obj);
-			} else {
-				throw new FileNotFoundException("Yaml file '" + customerYaml + "' not found in the resource");
-			}
-		}
-
-		catch(Exception e){
-			System.out.println(e);
-		}
+		    
         
     }
 

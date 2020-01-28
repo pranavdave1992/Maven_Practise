@@ -62,5 +62,12 @@ public class automationForm{
 		sel_region.selectByVisibleText("Asia");
 		sel_region.selectByVisibleText("North America");
 	}
+	
+	public void selectSex(String sex){
+		if(sex.equalsIgnoreCase("Male"))
+			sex_Male.click();
+		else
+			sex_Female.click();
+	}
 
 }

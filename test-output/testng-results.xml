@@ -2,40 +2,40 @@
 <testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="10567" started-at="2020-01-27T13:16:00 EST" finished-at="2020-01-27T13:16:11 EST">
+  <suite name="Suite" duration-ms="10570" started-at="2020-01-28T15:03:46 EST" finished-at="2020-01-28T15:03:57 EST">
     <groups>
     </groups>
-    <test name="Test" duration-ms="10567" started-at="2020-01-27T13:16:00 EST" finished-at="2020-01-27T13:16:11 EST">
+    <test name="Test" duration-ms="10570" started-at="2020-01-28T15:03:46 EST" finished-at="2020-01-28T15:03:57 EST">
       <class name="tests.automationFormTest">
-        <test-method status="PASS" signature="tearUP()[pri:0, instance:tests.automationFormTest@7494e528]" name="tearUP" is-config="true" duration-ms="76" started-at="2020-01-27T13:16:00 EST" finished-at="2020-01-27T13:16:00 EST">
+        <test-method status="PASS" signature="tearUP()[pri:0, instance:tests.automationFormTest@5d76b067]" name="tearUP" is-config="true" duration-ms="52" started-at="2020-01-28T15:03:46 EST" finished-at="2020-01-28T15:03:46 EST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearUP -->
-        <test-method status="PASS" signature="openingWebPage()[pri:0, instance:tests.automationFormTest@7494e528]" name="openingWebPage" is-config="true" duration-ms="4599" started-at="2020-01-27T13:16:00 EST" finished-at="2020-01-27T13:16:05 EST">
+        <test-method status="PASS" signature="openingWebPage()[pri:0, instance:tests.automationFormTest@5d76b067]" name="openingWebPage" is-config="true" duration-ms="5502" started-at="2020-01-28T15:03:46 EST" finished-at="2020-01-28T15:03:52 EST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openingWebPage -->
-        <test-method status="PASS" signature="before()[pri:0, instance:tests.automationFormTest@7494e528]" name="before" is-config="true" duration-ms="39" started-at="2020-01-27T13:16:05 EST" depends-on-methods="tests.testBase.openingWebPage" finished-at="2020-01-27T13:16:05 EST">
+        <test-method status="PASS" signature="before()[pri:0, instance:tests.automationFormTest@5d76b067]" name="before" is-config="true" duration-ms="269" started-at="2020-01-28T15:03:52 EST" depends-on-methods="tests.testBase.openingWebPage" finished-at="2020-01-28T15:03:52 EST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- before -->
-        <test-method status="PASS" signature="startTest()[pri:0, instance:tests.automationFormTest@7494e528]" name="startTest" is-config="true" duration-ms="328" started-at="2020-01-27T13:16:05 EST" finished-at="2020-01-27T13:16:05 EST">
+        <test-method status="PASS" signature="startTest()[pri:0, instance:tests.automationFormTest@5d76b067]" name="startTest" is-config="true" duration-ms="257" started-at="2020-01-28T15:03:52 EST" finished-at="2020-01-28T15:03:52 EST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startTest -->
-        <test-method status="PASS" signature="fillingTheForm()[pri:0, instance:tests.automationFormTest@7494e528]" name="fillingTheForm" duration-ms="3665" started-at="2020-01-27T13:16:05 EST" finished-at="2020-01-27T13:16:09 EST">
+        <test-method status="PASS" signature="fillingTheForm()[pri:0, instance:tests.automationFormTest@5d76b067]" name="fillingTheForm" duration-ms="2417" started-at="2020-01-28T15:03:53 EST" finished-at="2020-01-28T15:03:55 EST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- fillingTheForm -->
-        <test-method status="PASS" signature="fillingTheForm2()[pri:0, instance:tests.automationFormTest@7494e528]" name="fillingTheForm2" duration-ms="1179" started-at="2020-01-27T13:16:09 EST" finished-at="2020-01-27T13:16:10 EST">
+        <test-method status="PASS" signature="fillingTheForm2()[pri:0, instance:tests.automationFormTest@5d76b067]" name="fillingTheForm2" duration-ms="1389" started-at="2020-01-28T15:03:55 EST" finished-at="2020-01-28T15:03:56 EST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- fillingTheForm2 -->
-        <test-method status="PASS" signature="endTest()[pri:0, instance:tests.automationFormTest@7494e528]" name="endTest" is-config="true" duration-ms="706" started-at="2020-01-27T13:16:10 EST" finished-at="2020-01-27T13:16:11 EST">
+        <test-method status="PASS" signature="endTest()[pri:0, instance:tests.automationFormTest@5d76b067]" name="endTest" is-config="true" duration-ms="662" started-at="2020-01-28T15:03:56 EST" finished-at="2020-01-28T15:03:57 EST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- endTest -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:tests.automationFormTest@7494e528]" name="tearDown" is-config="true" duration-ms="2407" started-at="2020-01-27T13:16:11 EST" finished-at="2020-01-27T13:16:14 EST">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:tests.automationFormTest@5d76b067]" name="tearDown" is-config="true" duration-ms="2608" started-at="2020-01-28T15:03:57 EST" finished-at="2020-01-28T15:04:00 EST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
